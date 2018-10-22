@@ -2,6 +2,10 @@ import boto3
 import os
 import base64
 
+#  this script will demonstrate the ability for AWS Rekognition to identify faces -
+#  primarily it will outline the challenge of
+#  handling images of the same person with and without glasses
+#  and will determine the threshold setting (positive/negative recall) necessary for returning a match.
 
 COLLECTION_NAME=os.getenv('COLLECTION_NAME')
 ACCESS_KEY=os.getenv('ACCESS_KEY')
